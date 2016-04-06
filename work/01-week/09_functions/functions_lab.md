@@ -51,6 +51,12 @@ thirdAndFirst("Times","thyme");
 - [Java Modifier Types](http://www.tutorialspoint.com/java/java_modifier_types.htm)
 - [Princeton Recursion](http://introcs.cs.princeton.edu/java/23recursion/)
 
+
+----
+
+###Solution Code
+
+
 ```
 class Main {
 
