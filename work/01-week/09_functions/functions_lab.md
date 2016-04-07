@@ -50,3 +50,81 @@ thirdAndFirst("Times","thyme");
 - [Princeton Java Cheat sheet](http://introcs.cs.princeton.edu/java/11cheatsheet/)
 - [Java Modifier Types](http://www.tutorialspoint.com/java/java_modifier_types.htm)
 - [Princeton Recursion](http://introcs.cs.princeton.edu/java/23recursion/)
+
+
+----
+
+###Solution Code
+
+
+```
+class Main {
+
+  public static void main(String[] args) {
+    
+	int length = wordLength("hello or whatever! ");
+	System.out.println("wordLength " + length);
+	
+	maxOfTwoNumbers(7, 16);
+	isCharacterAVowel('z');
+	isCharacterAVowel('u');
+	
+	float result = divide152By(888);
+	System.out.println("divide152 :" + result);
+	
+	System.out.println("divide152 :" + divide152By(152));
+	
+	thirdAndFirst("hello ", "world");
+	thirdAndFirst("billygoat","LION");
+	thirdAndFirst("drEAMcaTCher","statue");
+	thirdAndFirst("Times","me");
+  }
+  
+  public static int wordLength(String str){
+  	return str.length();
+  }
+	  
+  public static void maxOfTwoNumbers (int a, int b){
+  	System.out.println("maxOfTwoNumbers :");
+  	if(a>b){
+  		System.out.println(a + " is larger");
+  	} else if (b>a) {
+  		System.out.println(b + " is larger");
+  	} else {
+  		System.out.println("error");
+  	}
+  }
+  
+  public static void isCharacterAVowel (char character) {
+  	switch(character){
+  		case 'a':
+  		case 'e':
+  		case 'i':
+  		case 'o':
+  		case 'u':
+  			System.out.println("isCharacterAVowel : " + true);
+  			break;
+  		default:
+  			System.out.println("isCharacterAVowel : " + false);
+  	}
+  }
+  	
+  public static float divide152By(int num){
+	float value = (float)num /152f;
+	return value;
+  }
+  
+  public static void thirdAndFirst(String str1, String str2){
+  	System.out.println(str1 + " " + str2);
+  	// System.out.println(str1.toLowerCase().charAt(0) + " and " + str2.toLowerCase().charAt(2));
+  	
+  	if (str1.toLowerCase().charAt(2) == str2.toLowerCase().charAt(0)) {
+  		System.out.println("thirdAndFirst are the same");
+  	} else {
+  		System.out.println("thirdAndFirst are not the same");
+  	}
+  }
+  
+  
+}
+```
