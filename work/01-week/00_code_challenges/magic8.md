@@ -57,8 +57,6 @@ Sometimes we all need a bit of guidance in our life. This afternoon, we will be 
 **Bonus:**
 - User input should be case insensitive, and spaces before or after the words should not matter.
 - Add a countdown, with delay, so that the trepidation is high when the answer is given.
-- Look up and use a case statement if appropriate.
-- Create a visual representation of the magic-eight ball.
 - Make it a talking ball by adding a second level of questioning.
 
 #### Starter code
