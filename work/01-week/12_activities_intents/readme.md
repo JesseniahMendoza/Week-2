@@ -68,7 +68,7 @@ So, how does this look in code?
 ```java
 
 	Intent intent = new Intent(EmailListActivity.this, ReadEmailActivity.class);
-	startActivity(Intent);
+	startActivity(intent);
 
 ```
 
@@ -95,7 +95,7 @@ When creating new intents, you can also give it *extra* data. Here's an example:
 	Intent intent = new Intent(EmailListActivity.this, ReadEmailActivity.class);
 	intent.putExtra("ID", 123);
 	intent.putExtra("SENDER", "John Smith");
-	startActivity(Intent);
+	startActivity(intent);
 
 ```
 
