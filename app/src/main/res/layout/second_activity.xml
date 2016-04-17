@@ -15,6 +15,15 @@
             android:layout_height="wrap_content"
             android:text="Back" />
 
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp"
+            android:ems="10" />
+
         <Button
             android:id="@+id/clear"
             android:layout_width="wrap_content"

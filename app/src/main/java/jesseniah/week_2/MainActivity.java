@@ -1,9 +1,9 @@
 package jesseniah.week_2;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import java.util.LinkedList;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     //Start with ArrayAdapter (to port ArrayList data into the ListView)
     Button b1,b2;
@@ -30,17 +30,21 @@ public class MainActivity extends Activity {
     static LinkedList<String> exampleList = new LinkedList<String>();
     ArrayAdapter<String> mAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+/*        assert twin3 != null;
+        assert mAdapter != null;*/
 
         exampleList = new LinkedList<>();
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, exampleList);
 
         twin3 =(ListView) findViewById(R.id.listView1);
         twin3.setAdapter(mAdapter);
-        b1 = (Button) findViewById(R.id.button1);
+        b1 = (Button) findViewById(R.id.button);
         b2 = (Button) findViewById(R.id.button2);
         e1 = (EditText) findViewById(R.id.editText1);
 
