@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.util.LinkedList;
 
 public class second_activity extends AppCompatActivity {
@@ -40,13 +42,34 @@ public class second_activity extends AppCompatActivity {
                 text = e1.getText().toString();
                 Toast.makeText(getApplicationContext(), "TASK ADDED IN LIST", Toast.LENGTH_SHORT).show();
                 exampleList.add(text);
+
+                String twin2 = e1.getText().toString();
+
+                if (twin2.length() > 0) {
+                    exampleList.add(twin2);
+                    mAdapter.notifyDataSetChanged();
+                    e1.setText("");
+
+                }
             }
-        });
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+            );
+            listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
+
+            {
+                @Override
+
+                public boolean onItemLongClick (AdapterView < ? > parent, View view,int position,
+                long id){
+                exampleList.remove(position);
+                mAdapter.notifyDataSetChanged();
                 return false;
             }
         }
+
     }
     }
+
+
+
+
