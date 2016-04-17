@@ -54,7 +54,7 @@ public class second_activity extends AppCompatActivity {
             }
 
             );
-            listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
+         /*   listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener()
 
             {
                 @Override
@@ -65,7 +65,7 @@ public class second_activity extends AppCompatActivity {
                 mAdapter.notifyDataSetChanged();
                 return false;
             }
-        }
+        }*/
 
     }
     }
