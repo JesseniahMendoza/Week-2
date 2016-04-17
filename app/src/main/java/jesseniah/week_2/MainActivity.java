@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,14 +14,13 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class MainActivity extends Activity {
 
     //Start with ArrayAdapter (to port ArrayList data into the ListView)
     Button b1,b2;
     EditText e1;
-    String text,u;
+    String text;
     String un[]={"","","","","","","","","","","","","","",""};
     String pas;
     Cursor c;
@@ -59,12 +59,7 @@ public class MainActivity extends Activity {
                     e1.setText("");
                 } else{
 
-
-
-
-
-
-
+                }
                     text = "'" + text + "'";
                     e1.setText("");
 
@@ -83,7 +78,7 @@ public class MainActivity extends Activity {
 
                     if (input.length() > 0) {
                         exampleList.add(input);
-                        mAdapter.notifygDataSetChanged();
+                        mAdapter.notifyDataSetChanged();
                         e1.setText("");
                     } else{
                         Toast.makeText(getApplicationContext(), "None", Toast.LENGTH_LONG).show();
@@ -91,8 +86,14 @@ public class MainActivity extends Activity {
 
                     startActivity(new Intent(getApplicationContext(), second_activity.class));
                 }
-
             });
+        twin3.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent costcoList = new Intent(MainActivity.this, second_activity.class);
+                startActivity(costcoList);
+            }
+        });
 
 
 
