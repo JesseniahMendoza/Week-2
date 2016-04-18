@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 /*        assert twin3 != null;
-        assert mAdapter != null;*/
+        assert mAdapter != null value;*/
 
         exampleList = new LinkedList<>();
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, exampleList);
 
-        twin3 =(ListView) findViewById(R.id.listView1);
+        twin3 =(ListView) findViewById(R.id.twin1);
         twin3.setAdapter(mAdapter);
         b1 = (Button) findViewById(R.id.button);
         b2 = (Button) findViewById(R.id.button2);

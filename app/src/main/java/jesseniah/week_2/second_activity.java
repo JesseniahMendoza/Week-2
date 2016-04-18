@@ -26,7 +26,7 @@ public class second_activity extends AppCompatActivity {
         b2 = (Button) findViewById(R.id.btn);
         e1 = (EditText) findViewById(R.id.editText1);
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, exampleList);
-        ListView listView = (ListView) findViewById(R.id.listView1);
+        ListView listView = (ListView) findViewById(R.id.twin3);
         listView.setAdapter(mAdapter);
 
 
