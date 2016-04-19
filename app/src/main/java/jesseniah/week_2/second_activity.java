@@ -1,6 +1,5 @@
 package jesseniah.week_2;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -30,8 +29,8 @@ public class second_activity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.twin3);
         listView.setAdapter(mAdapter);
 
-        Intent i = getIntent(exampleList);
-        Canopy = i.getStringExtra();
+
+
 
 
 
