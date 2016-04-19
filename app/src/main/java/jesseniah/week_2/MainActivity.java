@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                         mAdapter.notifyDataSetChanged();
                         e1.setText("");
                     } else{
-                        Toast.makeText(getApplicationContext(), "None", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG).show();
                     }
 
                     startActivity(new Intent(getApplicationContext(), second_activity.class));
