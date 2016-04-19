@@ -9,23 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:text="TO DO LIST"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="ADD WORK" />
+        android:text="Welcome ! Click Me To Add your First Task!" />
+
 
     <EditText
         android:id="@+id/editText1"
@@ -35,15 +26,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="28dp"
         android:ems="10" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
-        android:text="See List" />
 
     <ListView
         android:id="@+id/twin1"

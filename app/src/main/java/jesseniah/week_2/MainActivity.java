@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         twin3 =(ListView) findViewById(R.id.twin1);
         twin3.setAdapter(mAdapter);
-        b1 = (Button) findViewById(R.id.button);
-        b2 = (Button) findViewById(R.id.button2);
+        b1 = (Button) findViewById(R.id.button1);
+        b2 = (Button) findViewById(R.id.button1);
         e1 = (EditText) findViewById(R.id.editText1);
 
 

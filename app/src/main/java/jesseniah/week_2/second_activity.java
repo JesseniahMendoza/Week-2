@@ -36,9 +36,9 @@ public class second_activity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
 
-                text = e1.getText().toString();
+//                text = e1.getText().toString();
                 Toast.makeText(getApplicationContext(), "TASK ADDED IN LIST", Toast.LENGTH_SHORT).show();
-                exampleList.add(text);
+//                exampleList.add(text);
 
                 String twin2 = e1.getText().toString();
 
