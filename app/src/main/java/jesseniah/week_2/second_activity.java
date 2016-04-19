@@ -1,5 +1,6 @@
 package jesseniah.week_2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,7 +16,7 @@ public class second_activity extends AppCompatActivity {
 
     Button b2;
     ArrayAdapter<String> mAdapter;
-    String text;
+    String text,Canopy;
     EditText e1;
     static LinkedList<String> exampleList = new LinkedList<String>();
 
@@ -28,6 +29,10 @@ public class second_activity extends AppCompatActivity {
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, exampleList);
         ListView listView = (ListView) findViewById(R.id.twin3);
         listView.setAdapter(mAdapter);
+
+        Intent i = getIntent(exampleList);
+        Canopy = i.getStringExtra();
+
 
 
 

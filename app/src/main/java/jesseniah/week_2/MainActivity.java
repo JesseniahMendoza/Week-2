@@ -94,8 +94,12 @@ public class MainActivity extends AppCompatActivity {
         twin3.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent costcoList = new Intent(MainActivity.this, second_activity.class);
-                startActivity(costcoList);
+                Intent List1 = new Intent(MainActivity.this, second_activity.class);
+                startActivity(List1);
+                List1.putExtra(("Canopy",exampleList.get(position));
+                startActivity(List1);
+
+
             }
         });
 
