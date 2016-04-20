@@ -95,8 +95,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent List1 = new Intent(MainActivity.this, second_activity.class);
-                startActivity(List1);
-                List1.putExtra((exampleList.get(position));
+                List1.putExtra("listName",exampleList.get(position));
                 startActivity(List1);
 
 
